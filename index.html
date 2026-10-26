@@ -562,6 +562,8 @@
     @media (max-width: 760px) {
       .strip-inner, .chips, .bio, .footer-inner { grid-template-columns: 1fr; }
       .nav-right a:not(.phone-btn) { display: none; }
+      .nav-right { flex-direction: column-reverse; align-items: stretch; gap: 0.35rem; }
+      .nav-right a.nav-pros { display: block; text-align: center; border: 1px solid var(--gold-dark); color: var(--gold-dark); padding: 0.35rem 0.5rem; font-size: 0.62rem; letter-spacing: 0.08em; white-space: nowrap; }
       .bio img { max-width: 260px; }
     }
 
@@ -910,7 +912,7 @@
       <a href="/buy-a-home-st-george-utah/">Buy</a>
       <a href="/st-george-utah-real-estate/">St. George</a>
       <a href="#about">About</a>
-      <a href="/trusted-pros/">Trusted Pros</a>
+      <a class="nav-pros" href="/trusted-pros/">Trusted Pros</a>
       <a class="phone-btn" href="tel:4352465434">435-246-5434</a>
     </div>
   </nav>
